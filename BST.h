@@ -44,12 +44,12 @@ class BST {
                     Node* tmp = s.top();
                     s.pop();
                      if (tmp->right) {
-                    auto node = tmp->right;
-                    while (node) {
-                    s.push(node);
-                    node = node->left;
-                    }
-                  }
+                        auto node = tmp->right;
+                        while (node) {
+                            s.push(node);
+                            node = node->left;
+                         }
+                     }
                     return *this;
                 }
 
@@ -114,7 +114,8 @@ class BST {
         const T& get_root_data() const; 
 
     private:
-         Node* root;
+    
+        Node* root;
 
         Node* _copy(Node*);
         void _delete(Node*);
@@ -248,6 +249,7 @@ int BST<T>::get_height(const Node * cur) const {
         }
     }
 }
+
 template <typename T>
 bool BST<T>::contains(const T& val) const {
     return *find(val);
@@ -306,7 +308,6 @@ template <typename T>
 void BST<T>::clear() {
     _delete(root);
 }
-
 
 template <typename T>
 void BST<T>::erase(const T& val) {
@@ -437,6 +438,7 @@ typename BST<T>::Node* BST<T>::_deleteElement(Node * cur, const T& val) {
 
     return cur;
 }
+
 template <typename T>
 typename BST<T>::Node* BST<T>::_find(Node * cur, const T& val) const {
     if (cur == nullptr) {

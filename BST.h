@@ -382,6 +382,7 @@ void BST<T>::_insert(BST<T>::Node* cur, const T& val) {
         }
     }
 }
+
 template <typename T>
 void BST<T>::_printLevel(const Node* cur, int level) const {
     if (cur == nullptr) {

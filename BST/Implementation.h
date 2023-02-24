@@ -126,8 +126,7 @@ int BST<T>::get_height_helper(const Node * cur) const {
 }
 
 template <typename T>
-inline int BST<T>::get_number_of_nodes_helper(const Node* cur) const
-{
+int BST<T>::get_number_of_nodes_helper(const Node* cur) const {
     if (cur == nullptr) {
         return 0;
     }

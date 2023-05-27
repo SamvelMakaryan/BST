@@ -84,7 +84,7 @@ private:
     Node* root;
 };
 
-#include "Implementation.h"
+#include "BST.tpp"
 #endif
 
 

@@ -1,4 +1,4 @@
-#include "BST.h"
+#include "BST.hpp"
 #include <iostream>
 int main() {
     BST<int> ob1 {10, 13, -5, 4, 99};
